@@ -1,0 +1,37 @@
+{
+	"name": "satisfactory.ts",
+	"version": "0.0.1",
+	"description": "A TypeScript wrapper for the Satisfactory Dedicated Server API",
+	"type": "module",
+	"main": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "tsup src/index.ts --format esm,cjs --dts",
+		"prepublishOnly": "pnpm run build"
+	},
+	"keywords": [
+		"satisfactory",
+		"wrapper",
+		"server",
+		"api"
+	],
+	"author": "Ozyria <npm.yearly506@passmail.net>",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/onora-hbl/satisfactory.ts.git"
+	},
+	"bugs": {
+		"url": "https://github.com/onora-hbl/satisfactory.ts/issues"
+	},
+	"homepage": "https://github.com/onora-hbl/satisfactory.ts#readme",
+	"packageManager": "pnpm@10.12.4",
+	"devDependencies": {
+		"@types/node": "^24.2.1",
+		"tsup": "^8.5.0",
+		"typescript": "^5.9.2"
+	}
+}
