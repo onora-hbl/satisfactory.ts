@@ -1,6 +1,6 @@
 {
 	"name": "satisfactory.ts",
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"description": "A TypeScript wrapper for the Satisfactory Dedicated Server API",
 	"type": "module",
 	"main": "./dist/index.js",
