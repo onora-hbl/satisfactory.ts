@@ -1,3 +1,4 @@
+import { getServerOptions } from "./getServerOptions";
 import { healthCheck } from "./healthcheck";
 import { saveGame } from "./savegame";
 
@@ -22,7 +23,7 @@ export class ApiError extends Error {
 	}
 }
 
-// export type BooleanString = "True" | "False";
+export type BooleanString = "True" | "False";
 
 export class SatisfactoryClient {
 	private baseUrl: string;
@@ -118,4 +119,5 @@ export class SatisfactoryClient {
 
 	public healthCheck = healthCheck;
 	public saveGame = saveGame;
+	public getServerOptions = getServerOptions;
 }

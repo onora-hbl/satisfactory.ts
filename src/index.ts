@@ -3,4 +3,8 @@ export type {
 	HealthCheckRequest,
 	HealthCheckResponseData,
 } from "./healthcheck";
-export type { SaveGameRequest, SaveGameResponse } from "./savegame";
+export type { SaveGameRequest } from "./savegame";
+export type {
+	GetServerOptionsRequest,
+	GetServerOptionsResponseData,
+} from "./getServerOptions";
