@@ -1,4 +1,5 @@
 import { healthCheck } from "./healthcheck";
+import { saveGame } from "./savegame";
 
 export interface ApiRequest<TFunction extends string, TData = never> {
 	function: TFunction;
@@ -116,4 +117,5 @@ export class SatisfactoryClient {
 	}
 
 	public healthCheck = healthCheck;
+	public saveGame = saveGame;
 }
