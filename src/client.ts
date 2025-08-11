@@ -1,6 +1,7 @@
 import { getServerOptions } from "./getServerOptions";
 import { healthCheck } from "./healthcheck";
 import { saveGame } from "./savegame";
+import { shutdown } from "./shutdown";
 
 export interface ApiRequest<TFunction extends string, TData = never> {
 	function: TFunction;
@@ -120,4 +121,5 @@ export class SatisfactoryClient {
 	public healthCheck = healthCheck;
 	public saveGame = saveGame;
 	public getServerOptions = getServerOptions;
+	public shutdown = shutdown;
 }
