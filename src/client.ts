@@ -114,7 +114,7 @@ export class SatisfactoryClient {
 				);
 			}
 
-			return parsedBody as TResponse;
+			return parsedBody.data as TResponse;
 		};
 	}
 
