@@ -26,13 +26,10 @@ export type GetServerOptionsResponseData = {
 	pendingServerOptions: Record<string, string>;
 };
 
-export type GetServerOptionsResponse =
-	ApiSuccessResponse<GetServerOptionsResponseData>;
-
 export function getServerOptions(this: SatisfactoryClient) {
 	return this.buildApiRequest<
 		GetServerOptionsRequest,
-		GetServerOptionsResponse
+		GetServerOptionsResponseData
 	>("v1", {
 		function: "GetServerOptions",
 	})();
